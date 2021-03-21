@@ -1,0 +1,76 @@
+html {
+  font-size: 18px;
+}
+
+#igrica {
+  padding-left: 60px;
+}
+
+.red {
+  position: relative;
+  padding: 0;
+  display: flex;
+}
+
+.celija {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  overflow: visible;
+}
+
+.linija {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  background-color: #dee2e6;
+}
+
+.linija.sakrivena {
+  display: none;
+}
+
+.linija.ugasena {
+  z-index: 2;
+  background-color: #adb5bd;
+}
+
+.linija.horizontalna {
+  width: 70px;
+}
+
+.linija.horizontalna.zadnja {
+  top: 60px;
+}
+
+.linija.vertikalna {
+  height: 70px;
+}
+
+.linija.vertikalna.zadnja {
+  left: 60px;
+}
+
+.linija.aktivna {
+  z-index: 4;
+}
+
+.oznaka {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+}
+
+.igrac .bod {
+  font-size: 4rem;
+  color: #007bff;
+  line-height: 1;
+}
