@@ -1,3 +1,3 @@
 # MyGame
 
-Student projects
+Student projects - Ćilim Game
